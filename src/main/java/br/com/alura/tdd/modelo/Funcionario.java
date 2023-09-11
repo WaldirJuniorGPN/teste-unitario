@@ -1,8 +1,13 @@
 package br.com.alura.tdd.modelo;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Getter
+@Setter
 public class Funcionario {
 
 	private String nome;
@@ -13,18 +18,6 @@ public class Funcionario {
 		this.nome = nome;
 		this.dataAdmissao = dataAdmissao;
 		this.salario = salario;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public LocalDate getDataAdmissao() {
-		return dataAdmissao;
-	}
-
-	public BigDecimal getSalario() {
-		return salario;
 	}
 
 }
